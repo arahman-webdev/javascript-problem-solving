@@ -46,7 +46,6 @@ function composedFunction(num) {
 }
 
 
-console.log(composedFunction(5));
 
 
 // 4.Task: Sorting Objects
@@ -60,9 +59,27 @@ const cars = [
 cars.sort((a, b) => a.year - b.year);
 
 
+// 5.Task: Find and Modify
+
+const persons = [
+  { name: "Ab Rahman", age: 30 },
+  { name: "Ab Rahim", age: 27 },
+];
+
+function updateAge(array, name, newAge) {
+  const person = array.find(p => p.name === name);
+  if (person) {
+    person.age = newAge;
+  }
+  return array;
+}
 
 
 
+
+
+
+// 6.Task: Array Reduction
 
 
 const numbers = [1, 2, 3, 4, 5, 6];
@@ -74,8 +91,15 @@ const evenSum = numbers.reduce((sum, num) => {
   return sum;
 }, 0);
 
-console.log(evenSum);
-// 12
+
+
+
+// 8. Task: Unique Values
+
+
+
+
+
 
 
 
