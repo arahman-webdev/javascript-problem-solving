@@ -60,22 +60,23 @@ const cars = [
 cars.sort((a, b) => a.year - b.year);
 
 
-// 5.Task: Find and Modify
 
-const persons = [
-  { name: "Ab Rahman", age: 30 },
-  { name: "Ab Rahim", age: 27 },
-];
 
-function updateAge(array, name, newAge) {
-  const person = array.find(p => p.name === name);
-  if (person) {
-    person.age = newAge;
+
+
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const evenSum = numbers.reduce((sum, num) => {
+  if (num % 2 === 0) {
+    return sum + num;
   }
-  return array;
-}
+  return sum;
+}, 0);
 
-console.log(updateAge(persons, "Rahim", 28));
+console.log(evenSum);
+// 12
+
 
 
 
