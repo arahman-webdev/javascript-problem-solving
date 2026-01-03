@@ -96,6 +96,15 @@ const evenSum = numbers.reduce((sum, num) => {
 
 // 8. Task: Unique Values
 
+const uniqueNumbers = [];
+
+for (let i = 0; i < nums.length; i++) {
+  if (!uniqueNumbers.includes(nums[i])) {
+    uniqueNumbers.push(nums[i]);
+  }
+}
+
+console.log(uniqueNumbers);
 
 
 
